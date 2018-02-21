@@ -99,8 +99,9 @@ int main(){
 	int whatMonth = 0;
 	cout << "Please enter a year between 1 and 3000: ";
 	cin >> year;
-	cout << "Please enter the month number choose from the list below:"<<endl;
-	cout << "0 = January" << endl;
+	cout << "Please choose a month from 1 through 12: ";
+	//cout << "Please enter the month number choose from the list below:"<<endl;
+	/*cout << "0 = January" << endl;
 	cout << "1 = February" << endl;
 	cout << "2 = March" << endl;
 	cout << "3 = April" << endl;
@@ -111,8 +112,9 @@ int main(){
 	cout << "8 = September" << endl;
 	cout << "9 = October" << endl;
 	cout << "10 = November" << endl;
-	cout << "11 = December" << endl;
+	cout << "11 = December" << endl;*/
 	cin >> whatMonth;
+	whatMonth = whatMonth -1;
 	cout << endl;
 	cout << endl;
 	printCalendar(year, whatMonth);
